@@ -1,0 +1,104 @@
+.cardinfo{
+    padding: 30px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 600px;
+}
+
+.cardinfo_box{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cardinfo_box_title{
+    font-weight: bold;
+    font-size: 1.3rem;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.cardinfo_box_body{
+    width: fit-content;
+}
+
+.cardinfo_box_body input{
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 10px;
+    font-size: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 5px
+}
+
+.cardinfo_box_colors{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.cardinfo_box_colors li {
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    list-style: none;
+    border: 3px solid transparent;
+    transition: 200ms;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 5px;
+}
+
+.cardinfo_box_colors .active {
+    border: 3px solid yellow !important;
+}
+
+.cardinfo_box_progress_bar{
+    height: 10px;
+    border-radius: 20px;
+    width: 100%;
+    border: 1px solid #ccc;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 5px;
+}
+
+.cardinfo_box_progress{
+    background-color: #1379ec;
+    border-radius: 20px;
+    height: 8px;
+}
+
+.cardinfo_box_progress-active{
+    background-color: limegreen;
+}
+
+.cardinfo_box_list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cardinfo_task{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 8px 0;
+}
+
+.cardinfo_task p{
+    flex: 1;
+    line-height: 20px;
+}
+
+.cardinfo_task input,.cardinfo_task svg{
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+.cardinfo_box_labels{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}

@@ -1,0 +1,79 @@
+.editable{
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.editable_display{
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.editable_display:hover{
+    background-color: blueviolet;
+}
+
+.editable_edit{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.editable_edit input{
+    border-radius: 3px;
+    outline: none;
+    /* border: 1px solid #1379ec; */
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.editable_edit_footer{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.editable_edit_footer button{
+    outline: none;
+    border: none;
+    color: #fff;
+    background-color: #1379ec;
+    transition: 200ms;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.editable_edit_footer button:hover{
+    background-color: blueviolet;
+}
+
+.editable_edit_footer svg{
+    cursor: pointer;
+}
+
+.board_cards_add{
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 5px
+}
+
+.board_cards_add:hover{
+    box-shadow: 1px 2px 0 1px #ccc;
+}
+
+.app_boards_board_add{
+    width: 100%;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 1px 2px 0 1px rgba(46, 0, 250, 0.15);
+}
+
+.app_boards_board_add:hover{
+    box-shadow: 1px 2px 0 1px #ccc; 
+}
