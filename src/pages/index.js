@@ -4,13 +4,21 @@ import Editable from '@/components/Editable/Editable'
 import Header from '@/components/Header/Header'
 import styles from '@/styles/Home.module.css'
 import { useEffect, useState } from 'react'
-
+import { useRouter } from 'next/router'
 
 export default function Home() {
 
-  // const [boards, setBoards] = useState(
-  //   (typeof window !== 'undefined'&& JSON.parse(localStorage.getItem('app'))) || []
-  // )
+  const [token, setToken] = useState(
+    (typeof window !== 'undefined'&& (localStorage.getItem('token'))) || []
+  )
+  const router = useRouter()
+
+  useEffect(() => {
+    if(token?.length ===0){
+      router.push('/sign-in')
+    }
+  }, [token,router])
+
   const [boards, setBoards] = useState([
     {
         "id": 1682658186307.68,
@@ -223,9 +231,7 @@ export default function Home() {
     setBoards(tempBoards)
   }
 
-  // useEffect(() => {
-  //   typeof window !== 'undefined' && localStorage.setItem('app', JSON.stringify(boards))
-  // }, [boards])
+ 
 
   return (
     <div className={styles['app']}>
